@@ -1,0 +1,82 @@
+body{
+  margin-bottom: 50px;
+  background-color: black;
+  /* background-image: url("https://i.pinimg.com/originals/d2/95/5c/d2955c16ef59e3d5ad903e0324f7b29c.gif"); */
+}
+.container {
+  position: relative;
+  width: 20%;
+  height: 250px;
+  background-color: rgb(0, 0, 0);
+  display:inline-block;
+  padding: 2%;
+  border-radius: 100%;
+  align-items: center;
+  font-weight: bold;
+}
+.teste{   
+  height: 250px;
+  /* margin-left: 90px; */
+  padding: 40px;
+}
+.contorno{   
+    height: 250px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    /* margin-top: 30%; */
+}
+
+ .overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  /* background-color: #008CBA; */
+  background-image: url(imagens/luna.png);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  border-radius: 100%;
+}
+
+ .container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}  
+
+.text {
+  /* white-space: nowrap;  */
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  position: absolute;
+  overflow: hidden;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+} 
+
+.pergunta {
+    margin-top: 25%;
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    width: 80%;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.text p {
+    text-align: start;
+}
+
+h2{
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+}
